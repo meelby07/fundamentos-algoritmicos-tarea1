@@ -1,0 +1,43 @@
+Algoritmo cajero
+    //Definición de variables y tipos de datos 
+    Definir monto, residuo como Entero 
+    Definir B50, B20, B10 como Entero
+    Definir tarjeta valida como Booleano
+    Definir clave como cadena
+    
+    Escribir inicio: Insertar "tarjeta y clave"
+    // Simulamos validación inicial
+    tarjeta Valida = Verdadero
+
+    Repetir 
+      Escribir "Leer monto: Inserte la cantidad deseada 
+      Leer monto 
+
+      //Validar multiplicidad de 10 (monto MOD 10 = o)
+
+      //Proceso para calcular cantidad de billetes (Algoritmo Greedy)
+      residuo <- monto
+
+      B50 <- trunc(residuo/50)
+      residuo <- residuo MOD 50
+
+      B20 <- trunc(residuo/20)
+      residuo <- residuo MOD 20
+
+      B10 <- trunc(residuo/10)
+      residuo <- residuo MOD 10
+
+      //Mostrar resultados 
+      Escribir "mostrar cantidad"
+      Escribir B50(u/c) = 50.000
+      Escribir B20(u/c) = 20.000 
+      Escribir B10(u/c) = 10.000
+      Escribir TOTAL = monto
+
+      //Variable de control para salir del bucle monto Valido <- verdadero
+     sino 
+      Escribir  "mostrar error: monto no valido ( debe ser múltiplo de 10)
+      monto Valido <- falso 
+      
+   Fin si  
+      se muestra comto valido = Verdadero

@@ -1,0 +1,43 @@
+
+    // 1. Definición de variables y tipos de datos
+    Definir nombreProducto Como Cadena
+    Definir precioUnitario, subtotal, descuento, subtotalConDescuento, iva, total Como Real
+    Definir cantidad Como Entero
+    
+    // 2. Entrada de datos
+    Escribir "Ingrese el nombre del producto:"
+    Leer nombreProducto
+    Escribir "Ingrese el precio unitario del producto ($):"
+    Leer precioUnitario
+    Escribir "Ingrese la cantidad comprada:"
+    Leer cantidad
+    
+    // 3. Procesamiento lógico
+    subtotal <- precioUnitario * cantidad
+    
+    // Aplicar descuento del 10% si supera los $100.000
+    Si subtotal > 100000 Entonces
+        descuento <- subtotal * 0.10
+    Sino
+        descuento <- 0
+    FinSi
+    
+    subtotalConDescuento <- subtotal - descuento
+    
+    // Calcular IVA (19%) sobre el valor con descuento
+    iva <- subtotalConDescuento * 0.19
+    
+    // Cálculo final
+    total <- subtotalConDescuento + iva
+    
+    // 4. Salida de resultados (Factura)
+    Escribir "-------------------------------------------"
+    Escribir "          FACTURA DE VENTA                 "
+    Escribir "-------------------------------------------"
+    Escribir "Producto: ", nombreProducto
+    Escribir "Subtotal: $", subtotal
+    Escribir "Descuento aplicado (10%): $", descuento
+    Escribir "IVA (19%): $", iva
+    Escribir "-------------------------------------------"
+    Escribir "TOTAL A PAGAR: $", total
+    Escribir "-------------------------------------------"

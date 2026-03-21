@@ -1,0 +1,32 @@
+	Algoritmo SumaYContadorPositivos
+		// 1. Definición de variables y tipos de datos
+		Definir num, sumaTotal, contadorPositivos, i Como Entero
+		
+		// 2. Inicialización de variables (Importante)
+		sumaTotal <- 0         // El acumulador empieza en 0
+		contadorPositivos <- 0 // El contador empieza en 0
+		
+		Escribir "--- Registro de 5 Números ---"
+		
+		// 3. Ciclo para leer los 5 números
+		Para i <- 1 Hasta 5 Con Paso 1 Hacer
+			Escribir "Ingrese el número ", i, ":"
+			Leer num
+			
+			// Proceso del Acumulador: Sumar el valor ingresado al total
+			sumaTotal <- sumaTotal + num
+			
+			// Proceso del Contador: Si el número es mayor a 0, contar +1
+			
+			Si num > 0 Entonces
+				contadorPositivos <- contadorPositivos + 1
+			FinSi
+		FinPara
+		
+		// 4. Salida de resultados
+		Escribir "----------------------------"
+		Escribir "Suma total: ", sumaTotal
+		Escribir "Números positivos: ", contadorPositivos
+		Escribir "----------------------------"
+FinAlgoritmo
+	
