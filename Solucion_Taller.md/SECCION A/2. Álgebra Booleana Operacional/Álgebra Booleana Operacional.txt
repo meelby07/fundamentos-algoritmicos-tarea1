@@ -1,0 +1,40 @@
+
+teniendo en cuenta que:
+
+  var_A = Verdadero
+
+  var_B = Falso
+
+  var_C = Verdadero
+
+ disifrar:
+
+  resultado_logico <-  No(var_A O var_B) Y (var_C Y  No(var_B))
+
+Paso 1: (var_A  O  var_B) = (verdadero O falso)
+ 
+  si es una operación O y uno de los componentes es verdadero, el resultado
+  es verdadero =  No(Verdadero)  Y  (var_C  Y No(var_B))
+
+Paso 2:  No(var_B) = (falso)
+
+  por su operador (NO) ivertimos el valor dando como
+  resultado =   No(Verdadero)  Y  (var_C  Y Verdadero)
+
+Paso 3: (var_C  Y Verdadero) = (verdadero y verdadero)
+
+  En una operación Y, si ambos son verdaderos el resultado es
+  verdadero =   No(Verdadero) Y Verdadero
+
+Paso 4:  No(Verdadero)
+
+  como antes mencionado el operador logico (NO) es invertir el 
+  valor del operador dejando lo en  falso = Falso Y Verdadero
+
+Paso 5:  (Operador Y)
+
+  La condición final no se cumple como uno de los operandos es
+  Falso
+  
+  resultado_logico  <-  falso 
+

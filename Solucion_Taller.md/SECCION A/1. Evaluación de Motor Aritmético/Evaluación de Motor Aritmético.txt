@@ -1,0 +1,21 @@
+
+   resultado <- 5 + 3 x 2^2 - (10 MOD 3)
+
+El operador (MOD) indica la que hay que dividir.
+seria ( 10 / 3 ) = 3 con residup de 1
+
+   resultado <- 5 + 3 x 2^2 - (1)
+
+después de los paréntesis sigue la potencia 2^2 = 2+2=4 
+
+   resultado <- 5 + 3 x 4 - 1
+
+Antes de sumar o restar , se multiplica 3 x 4 = 12
+
+   resultado <- 5 + 12 - 1
+
+luego se suma de izquierda a derecha 5 + 12 = 17
+
+   resultado <-  17 - 1 = 16
+
+   resultado <- 16

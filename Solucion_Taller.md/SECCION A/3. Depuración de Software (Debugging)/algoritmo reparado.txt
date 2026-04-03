@@ -1,0 +1,29 @@
+Algoritmo SelectorCandidatos_Optimizado
+    Definir estatura, peso Como Real
+    Definir esApto Como Logico
+//de melkin barrios
+    Escribir "Ingrese estatura en metros (ej: 1.75):"
+    Leer estatura
+    Escribir "Ingrese peso en kilogramos (ej: 75.5):"
+    Leer peso
+    
+    Si estatura <= 0 O peso <= 0 Entonces
+        Escribir "Error: Los valores ingresados deben ser mayores a cero."
+    Sino
+        
+        Si estatura > 1.70 Y peso < 80 Entonces
+            Escribir "Validación de perfil: EXITOSA"
+            Escribir "El cadete cumple con todos los estándares"
+        Sino
+            Escribir "Validación de perfil: FALLIDA"
+            
+           
+            Si estatura <= 1.70 Entonces
+                Escribir "- Estatura insuficiente (Mínimo 1.71m)."
+            FinSi
+            Si peso >= 80 Entonces
+                Escribir "- Excedente de peso (Máximo 79.9kg)."
+            FinSi
+        FinSi
+    FinSi
+FinAlgoritmo

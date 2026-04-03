@@ -1,0 +1,11 @@
+
+FALLAS:
+	
+ *El uso de (O) permite va la validacion aceptando al cadete solo por
+  un criterio valido para criterios absolutos de requiere el operador (Y) o (AND)
+
+ *Falta de definicion de tipado para el peso y la altura como Real ya que eson
+  variables 
+
+ *Falta de valiacion el sistema aceptaba cualquier peso o altura sin una importar
+  por un limite como puede ser -50kg 
