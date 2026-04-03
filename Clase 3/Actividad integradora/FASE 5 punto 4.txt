@@ -1,0 +1,37 @@
+1. ¿Cuántos caminos de ejecución posibles tiene el algoritmo?
+
+El número de caminos de ejecución depende de las decisiones o caminos del código en mi algoritmo se multiplican
+por las validaciones y clasificaciones.
+
+
+
+2. ¿Qué sucede si las 3 notas son iguales?
+
+Sí, el algoritmo lo maneja correctamente.
+Esto se debe al uso de los operadores relacionales de "mayor o igual" ( >= ) y "menor o igual" ( <= )
+
+
+
+3. ¿Podrías reescribir alguna de tus condicionales anidadas usando operadores AND/OR?
+
+pude simplificar el nivel de desempeño usando operadores y (AND) para definir algunos rasgos
+
+Si promedio >= 4.8 Entonces
+    desempeño <- "SOBRESALIENTE - Candidato a Beca"
+FinSi
+
+Si promedio >= 4.0 Y promedio < 4.8 Entonces
+    desempeño <- "EXCELENTE - Felicitaciones"
+FinSi
+
+Si promedio >= 3.5 Y promedio < 4.0 Entonces
+    desempeño <- "BUENO - Sigue adelante"
+FinSi
+
+Si promedio >= 3.0 Y promedio < 3.5 Entonces
+    desempeño <- "REGULAR - Necesita mejorar"
+FinSi
+
+Si promedio < 3.0 Entonces
+    desempeño <- "DEFICIENTE - Requiere refuerzo urgente"
+FinSi
